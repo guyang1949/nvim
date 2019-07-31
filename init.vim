@@ -71,7 +71,7 @@ noremap = nzz
 noremap - Nzz
 " noremap <up> nzz
 " noremap <down> Nzz
-noremap <LEADER><LEADER> :nohlsearch<CR>
+noremap <LEADER>, :nohlsearch<CR>
 " noremap <LEADER><LEADER> :nohlsearch<CR>
 
 " ===
