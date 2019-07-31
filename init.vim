@@ -71,7 +71,7 @@ noremap = nzz
 noremap - Nzz
 " noremap <up> nzz
 " noremap <down> Nzz
-noremap <LEADER>, :nohlsearch<CR>
+noremap ,<CR> :nohlsearch<CR>
 " noremap <LEADER><LEADER> :nohlsearch<CR>
 
 " ===
@@ -87,7 +87,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 let mapleader=" "
 
 " Open the vimrc file anytime
-map <LEADER>rc :e ~/.vim/vimrc<CR>
+map sr<CR> :e ~/.config/nvim/init.vim<CR>
 
 " Disabling the default s key
 noremap s <nop>
@@ -98,8 +98,8 @@ map S :w<CR>
 map Q :q<CR>
 map R :source $MYVIMRC<CR>
 
-map <LEADER>c "+y
-map <LEADER>v "+gp
+map c<CR> "+y
+map v<CR> "+gp
 
 " Resize splits with arrow keys
 map <C-up> :res +5<CR>
