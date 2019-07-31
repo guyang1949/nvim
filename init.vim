@@ -69,7 +69,10 @@ exec "nohlsearch"
 
 noremap = nzz
 noremap - Nzz
+" noremap <up> nzz
+" noremap <down> Nzz
 noremap <LEADER><LEADER> :nohlsearch<CR>
+" noremap <LEADER><LEADER> :nohlsearch<CR>
 
 " ===
 " === Restore Cursor Position
@@ -268,15 +271,15 @@ let g:NERDTreeIndicatorMapCustom = {
 " ===
 " === NCM2
 " ===
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>": "\<CR>")
-autocmd BufEnter * call ncm2#enable_for_buffer()
-set completeopt=noinsert,menuone,noselect
-let ncm2#popup_delay = 5
-let g:ncm2#matcher = "substrfuzzy"
-let g:ncm2_jedi#python_version = 3
-let g:ncm2#match_highlight = 'sans-serif'
+"inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+"inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>": "\<CR>")
+"autocmd BufEnter * call ncm2#enable_for_buffer()
+"set completeopt=noinsert,menuone,noselect
+"let ncm2#popup_delay = 5
+"let g:ncm2#matcher = "substrfuzzy"
+"let g:ncm2_jedi#python_version = 3
+"let g:ncm2#match_highlight = 'sans-serif'
 
 " Some testing features
 set shortmess+=c
