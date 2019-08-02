@@ -128,9 +128,8 @@ map ti :+tabnext<CR>
 map tmn :-tabmove<CR>
 map tmi :+tabmove<CR>
 
-" noremap <LEADER>s :split<CR>
-" noremap <LEADER>v :vsplit<CR>
-
+noremap <LEADER>s :split<CR>
+noremap <LEADER>v :vsplit<CR>
 
 " ===
 " === Install Plugins with Vim-Plug
@@ -206,6 +205,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'roxma/nvim-yarp'
 
 call plug#end()
+
 
 " ===
 " === Dress up my vim
